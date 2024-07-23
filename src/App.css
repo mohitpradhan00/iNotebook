@@ -1,0 +1,67 @@
+:root{
+    --editBtnHoverColor: #00afef;
+    --dltBtnHoverColor: #ff5b6f;
+    --viewTitleDescriptionWidth: 95vw;
+    --viewNoteBorderRadius: 10px;
+}
+/* AddNote */
+.description{
+    height: 225px;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    resize: none;
+}
+.title{
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+}
+/*deleteModal  */
+.fa-triangle-exclamation{
+    font-size: 1.35rem;
+}
+/* ViewModal */
+.viewTitle{
+    width: var(--viewTitleDescriptionWidth);
+    outline: none;
+    background-color: white;
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: var(--viewNoteBorderRadius);
+    border-top-right-radius: var(--viewNoteBorderRadius);
+    font-size: 1.35rem;
+    border-bottom: none;
+}
+.viewDescription{
+    width: var(--viewTitleDescriptionWidth);
+    min-height: 70vh;
+    background-color: white;
+    font-size: 1.175rem;
+    border-top: none;
+    border-bottom-left-radius: var(--viewNoteBorderRadius);
+    border-bottom-right-radius: var(--viewNoteBorderRadius);
+    outline: none;
+    resize: none;
+    border-top-color: white;
+}
+.viewModalBadge{
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.viewModalEditBtn:hover{
+    background-color: var(--editBtnHoverColor);
+    border-color: var(--editBtnHoverColor);
+}
+.viewModalDltBtn:hover{
+    background-color: var(--dltBtnHoverColor);
+    border-color: var(--dltBtnHoverColor);
+}
+/* NoteItem */
+.NoteItemBadge{
+    position: absolute;
+    top: -0.75%;
+    right: -1%;
+}
